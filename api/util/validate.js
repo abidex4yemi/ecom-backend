@@ -17,12 +17,14 @@ const joiValidate = (req, res, next, schema) => {
   // check for validation error
   if (error) {
     // Format error object of JOI
-    const errors = error.details.map(current => ({
+    const errors = error.details.map((current) => ({
       field: current.context.key,
       message: current.message.replace(/['"]/g, '')
     }));
 
-    return res.status(400).json({ errors });
+    return res.status(400).json({
+      errors
+    });
   }
 
   // Note: create a new key `sanitizedBody` to the body with sanitized value

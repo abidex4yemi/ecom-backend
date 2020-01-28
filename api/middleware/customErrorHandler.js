@@ -1,3 +1,4 @@
+/* eslint-disable implicit-arrow-linebreak */
 const {
   BAD_REQUEST,
   CONFLICT,
@@ -141,6 +142,6 @@ const errorsObject = {
  *
  */
 const customErrorHandler = () =>
-  Object.keys(errorsObject).map(key => errorsObject[key]);
+  Object.keys(errorsObject).map((key) => errorsObject[key]);
 
 module.exports = customErrorHandler;

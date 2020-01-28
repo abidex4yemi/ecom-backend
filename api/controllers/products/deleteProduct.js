@@ -2,7 +2,7 @@ const db = require('../../models');
 const { handleSuccessResponse, OK } = require('../../util/success');
 const { createError, GENERIC_ERROR, NOT_FOUND } = require('../../util/error');
 
-const Product = db.models.Product;
+const { Product } = db.models;
 
 /**
  * @description Delete a single product given the id is valid

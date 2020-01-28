@@ -2,7 +2,7 @@ const db = require('../../models');
 const { handleSuccessResponse, OK } = require('../../util/success');
 const { createError, GENERIC_ERROR } = require('../../util/error');
 
-const Product = db.models.Product;
+const { Product } = db.models;
 
 /**
  * @description Returns 8 product per-page
@@ -29,7 +29,7 @@ const getProducts = async (req, res, next) => {
     return res.status(OK).json(
       handleSuccessResponse({
         data: {
-          products: products,
+          products,
           currentPage: page,
           totalPages,
           numOfResults: products.length

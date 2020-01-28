@@ -30,5 +30,5 @@ module.exports = {
   NOT_FOUND,
   GENERIC_ERROR,
   UNAUTHORIZED,
-  FORBIDDEN,
+  FORBIDDEN
 };

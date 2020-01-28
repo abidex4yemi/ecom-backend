@@ -2,8 +2,8 @@ const db = require('../../models');
 const { handleSuccessResponse, CREATED } = require('../../util/success');
 const { createError, GENERIC_ERROR, NOT_FOUND } = require('../../util/error');
 
-const Category = db.models.Category;
-const Product = db.models.Product;
+const { Category } = db.models;
+const { Product } = db.models;
 
 /**
  * @description Add new product

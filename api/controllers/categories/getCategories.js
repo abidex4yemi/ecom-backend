@@ -2,7 +2,7 @@ const db = require('../../models');
 const { handleSuccessResponse, OK } = require('../../util/success');
 const { createError, GENERIC_ERROR } = require('../../util/error');
 
-const Category = db.models.Category;
+const { Category } = db.models;
 
 /**
  * @description Returns all categories

@@ -25,7 +25,11 @@ dotenv.config();
  * Set up middleware
  */
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(
+  express.urlencoded({
+    extended: true
+  })
+);
 app.use(cors());
 app.use(logger('dev'));
 app.use(helmet());

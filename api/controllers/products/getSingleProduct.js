@@ -2,7 +2,7 @@ const db = require('../../models');
 const { handleSuccessResponse, OK } = require('../../util/success');
 const { createError, GENERIC_ERROR, NOT_FOUND } = require('../../util/error');
 
-const Product = db.models.Product;
+const { Product } = db.models;
 
 /**
  * @description Returns a single product
@@ -15,7 +15,9 @@ const getSingleProduct = async (req, res, next) => {
   try {
     const productId = req.params.id;
 
-    const product = await Product.findOne({ _id: productId });
+    const product = await Product.findOne({
+      _id: productId
+    });
 
     if (!product) {
       return next(

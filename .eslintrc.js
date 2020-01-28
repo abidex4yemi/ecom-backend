@@ -15,5 +15,9 @@ module.exports = {
     ecmaVersion: 2018,
   },
   rules: {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 70,
   },
 };

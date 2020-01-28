@@ -1,3 +1,4 @@
+/* eslint-disable implicit-arrow-linebreak */
 const Joi = require('@hapi/joi');
 const joiValidate = require('../util/validate');
 

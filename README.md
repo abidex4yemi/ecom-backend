@@ -18,7 +18,11 @@
 - Run `npm install` to install all dependencies
 - Type `npm run watch` to get the development server running on the front-end
 
+### Authentication
+
 ## Add product
+
+`POST https://backend-venco-ecom.herokuapp.com/api/v1/products`
 
 ```js
   {
@@ -34,6 +38,8 @@
 	}]
 }
 ```
+
+`GET https://backend-venco-ecom.herokuapp.com/api/v1/products`
 
 ## getProducts
 

@@ -17,7 +17,6 @@
 - Setup `.env => checkout sample (.env.example) in the codebase` for environment variable
 - Run `npm install` to install all dependencies
 - Type `npm run watch` to get the development server running on the front-end
-- Note: `no need for database setup` as this uses Mongo Atlas
 
 ## Add product
 
